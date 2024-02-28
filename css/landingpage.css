@@ -18,21 +18,25 @@
 
     .searchbar input {
         height: 30px;
-        width: 30vh;
+        width: 35vh;
         border: none;
+        padding-left: 0.5rem;
         border-top-left-radius: 5px 5px;
         border-bottom-left-radius: 5px 5px;
+        background-color: #FEFEFF;
+        
         
     }
 
     .searchbar button {
         height: 32px;
         width: 32px;
-        background-color: red;
+        background-color: #FEFEFF;
         border: none;
         border-top-right-radius: 5px 5px;
         border-bottom-right-radius: 5px 5px;
         float: right;
+        border-left: 2px solid rgb(190, 190, 190);
     }
 
     header {
@@ -53,6 +57,7 @@
         min-height: 100px;
     }
 }
+
 
 /* #wrapper {
     display: grid;
