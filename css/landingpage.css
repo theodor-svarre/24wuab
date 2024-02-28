@@ -11,52 +11,121 @@
         display: flex;
         background-color: black;
         height: 64px;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
     }
 
-    .searchbar input {
-        height: 30px;
-        width: 35vh;
-        border: none;
-        padding-left: 0.5rem;
-        border-top-left-radius: 5px 5px;
-        border-bottom-left-radius: 5px 5px;
-        background-color: #FEFEFF;
-        
-        
-    }
+   
 
-    .searchbar button {
-        height: 32px;
-        width: 32px;
-        background-color: #FEFEFF;
-        border: none;
-        border-top-right-radius: 5px 5px;
-        border-bottom-right-radius: 5px 5px;
-        float: right;
-        border-left: 2px solid rgb(190, 190, 190);
+    /* .menu-button{
+        cursor: pointer;
+        display: inline;
     }
+    
+    .menu-button i.material-icons{
+        font-size: 2.5rem;
+    } */
 
     header {
         background-color: rgb(19, 19, 19);
         min-height: 300px;
-        border-bottom: 2px solid #FEFEFF;
+        border-bottom: 2px solid snow;
 
     }
     main {
         background-color: rgb(19, 19, 19);
         min-height: 300px;
-        color: #FEFEFF;
-        border-bottom: 2px solid #FEFEFF ;
+        color: snow;
+        border-bottom: 2px solid snow ;
 
     }
+
     footer {
         background-color: rgb(19, 19, 19);
         min-height: 100px;
     }
 }
+
+.nav_logo {
+    display: flex;
+    color: snow; 
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2.5px solid snow;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.searchbar input {
+    height: 30px;
+    width: 35vh;
+    border: none;
+    padding-left: 0.5rem;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    background-color: snow;        
+}
+
+.searchbar button {
+    height: 32px;
+    width: 32px;
+    background-color: snow;
+    border: none;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    float: right;
+    border-left: 2px solid rgb(190, 190, 190);
+}
+
+.menu_button{
+    color: snow;
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: green;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+
+
 
 
 /* #wrapper {
