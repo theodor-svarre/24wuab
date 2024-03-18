@@ -91,7 +91,7 @@ body {
 /* -------------------------------------------------------- */
 
 #main {
-  min-height: 300px;
+  min-height: 50vh;
   margin: 0;
   background-color: black;
 }
@@ -141,16 +141,18 @@ body {
 /* -------------------------------------------------------- */
 
 #section {
-  background-color: rgb(19, 19, 19);
-  min-height: 300px;
+  background-color: black;
+  min-height: 50vh;
   color: snow;
   margin: 0;
+  padding-bottom: 30px;
 }
 
-.maintitle {
+.sectiontitle {
   padding-left: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin: 0;
 }
 
 .horisantalscrollmeny {
@@ -173,29 +175,73 @@ body {
   display: none;
 }
 
-.scrollbarimage1 {
+.scrollbarcontainer {
   background-color: blue;
-}
-
-.scrollbarimage2 {
-  background-color: yellow;
-}
-
-.scrollbarimage3 {
-  background-color: green;
 }
 
 aside {
   display: none;
 }
 
+/* -------------------------------------------------------- */
+
 footer {
-  background-color: rgb(19, 19, 19);
-  min-height: 100px;
+  /* background-color: rgb(19, 19, 19); */
+  min-height: 70vh;
+  background-color: black;
 }
 
-.maintitle {
-  margin: 0;
+.signcontainer {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  height: 12.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.signbtn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: snow;
+  background-color: rgb(37, 37, 37);
+  padding: 12.5px;
+  border-radius: 5px;
+  /* JAg får ändra font senare */
+  /* font-family: "Bebas Neue", sans-serif; */
+}
+
+.signbtn:hover {
+  background-color: rgb(46, 46, 46);
+  cursor: pointer;
+}
+
+.footericon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+  height: 12.5vh;
+}
+
+.footericonbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: snow;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  font-size: 32.5px;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+}
+
+.footericonbutton:hover {
+  background-color: rgb(31, 31, 31);
 }
 
 /* -------------------------------------------------------- */
