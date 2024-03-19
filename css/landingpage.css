@@ -191,7 +191,7 @@ footer {
   background-color: black;
 }
 
-.signcontainer {
+.signcontainer1 {
   background-color: rgb(20, 20, 20);
   display: flex;
   height: 12.5vh;
@@ -199,7 +199,25 @@ footer {
   align-items: center;
 }
 
-.signbtn {
+.signbtn1 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: snow;
+  background-color: rgb(37, 37, 37);
+  padding: 12.5px;
+  border-radius: 5px;
+}
+
+.signcontainer2 {
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  height: 12.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.signbtn2 {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -211,7 +229,8 @@ footer {
   /* font-family: "Bebas Neue", sans-serif; */
 }
 
-.signbtn:hover {
+.signbtn1:hover,
+.signbtn2:hover {
   background-color: rgb(46, 46, 46);
   cursor: pointer;
 }
@@ -237,11 +256,30 @@ footer {
   font-size: 32.5px;
   border-radius: 50%;
   border: none;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .footericonbutton:hover {
   background-color: rgb(31, 31, 31);
+}
+
+.footerlänkar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 5vh;
+}
+
+.footerlänkarord {
+  cursor: pointer;
+  text-decoration: none;
+  color: snow;
+  font-size: 3vh;
+}
+
+.footerlänkarord:hover {
+  text-decoration: underline;
 }
 
 /* -------------------------------------------------------- */
