@@ -4,9 +4,8 @@ body {
 
 #header {
   display: flex;
-  background-color: hsl(15, 15%, 15%);
+  background-color: rgb(15, 15, 15);
   height: 4rem;
-  /* justify-content: center; */
   align-items: center;
   z-index: 10;
   padding-left: 20px;
@@ -22,7 +21,7 @@ body {
 }
 
 .searchbar input {
-  height: 30px;
+  height: 2rem;
   width: 60vw;
   max-width: 31.25rem;
   border: none;
@@ -38,7 +37,7 @@ body {
 
 .searchbar button {
   cursor: pointer;
-  height: 2rem;
+  height: 2.125rem;
   width: 2rem;
   background-color: snow;
   border: none;
@@ -61,11 +60,7 @@ body {
 }
 
 .menu-button {
-  color: snow;
-  cursor: pointer;
-  display: inline;
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .menu-button i.material-icons {
@@ -351,7 +346,7 @@ aside {
   } */
 
   #header {
-    gap: 2rem;
+    gap: 1rem;
     padding-inline: 7.5rem;
   }
 
@@ -361,7 +356,56 @@ aside {
     height: 2rem;
     display: flex;
     align-items: center;
+    padding: 0.25rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
   }
+
+  .headerloginbtn:hover {
+    background-color: rgb(46, 46, 46);
+    cursor: pointer;
+  }
+
+  .menutitle {
+    color: snow;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .menu-button {
+    display: block;
+    color: snow;
+    cursor: pointer;
+    display: inline;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .menu-button:hover {
+    background-color: rgb(46, 46, 46);
+  }
+
+  .navlogo {
+    display: flex;
+    color: snow;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2.5px solid snow;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  /* -------------------------------------------------------- */
 
   #main {
     min-height: 60vh;
@@ -370,30 +414,25 @@ aside {
     padding-inline: 7.5rem;
   }
 
-  #section {
-    padding-left: 7.5rem;
-  }
-
-  #footer {
-    min-height: 50vh;
-  }
-
   .mySlides img {
     width: 100%;
     height: 60vh;
   }
 
-  .slideshow-container {
-    grid-column: 1 / 3;
+  .searchbar input {
+    width: 40vw;
+    max-width: unset;
+  }
+
+  /* -------------------------------------------------------- */
+
+  #aside {
+    display: initial;
   }
 
   .aside {
     background-color: rgb(15, 15, 15);
     color: red;
-  }
-
-  #aside {
-    display: initial;
   }
 
   .asidetitle {
@@ -411,15 +450,10 @@ aside {
     margin-left: 1rem;
   }
 
-  .navlogo {
-    display: flex;
-    color: snow;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 2.5px solid snow;
-    padding: 5px 10px;
-    font-size: 20px;
-    font-family: "Bebas Neue", sans-serif;
+  /* -------------------------------------------------------- */
+
+  #section {
+    padding-left: 7.5rem;
   }
 
   .sectiontitle {
@@ -431,17 +465,22 @@ aside {
     width: 60%;
   }
 
-  .searchbar input {
-    width: 40vw;
-    max-width: unset;
-  }
-
-  .signcontainer1 {
-    display: none;
+  .slideshow-container {
+    grid-column: 1 / 3;
   }
 
   .scrollbarcontainer img {
     width: 30vw;
+  }
+
+  /* -------------------------------------------------------- */
+
+  #footer {
+    min-height: 50vh;
+  }
+
+  .signcontainer1 {
+    display: none;
   }
 
   .footericon {
