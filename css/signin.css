@@ -6,14 +6,15 @@ body {
   display: flex;
   background-color: black;
   height: 64px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
   z-index: 10;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.nav_logo {
+.navlogo {
   display: none;
 }
 
@@ -203,17 +204,52 @@ footer {
 /* Desktop storlek */
 /* Stämmer när skärmbredden är över 414pixlar */
 @media (min-width: 415px) {
-  #wrapper {
-  }
+  /* #wrapper {
+  } */
 
   #header {
     justify-content: space-between;
+    padding-inline: 7.5rem;
   }
 
-  #main {
+  #footer {
+    min-height: 50vh;
   }
 
-  .nav_logo {
+  .mySlides img {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .slideshow-container {
+    grid-column: 1 / 3;
+  }
+
+  .aside {
+    background-color: rgb(15, 15, 15);
+    color: red;
+  }
+
+  #aside {
+    display: initial;
+  }
+
+  .asidetitle {
+    display: flex;
+    align-items: center;
+    color: snow;
+    background-color: black;
+    padding-bottom: 3vh;
+    font-size: 1.5rem;
+  }
+
+  .asideimage {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .navlogo {
     display: flex;
     color: snow;
     text-decoration: none;
@@ -230,14 +266,27 @@ footer {
 
   .horisantalscrollmenu {
     background-color: inherit;
+    width: 60%;
   }
 
   .searchbar input {
-    /* width: 50vw; */
+    width: 40vw;
     max-width: unset;
   }
 
   .signcontainer1 {
     display: none;
+  }
+
+  .footericon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footerlinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
 }

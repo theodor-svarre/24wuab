@@ -4,9 +4,9 @@ body {
 
 #header {
   display: flex;
-  background-color: black;
-  height: 64px;
-  justify-content: space-between;
+  background-color: hsl(15, 15%, 15%);
+  height: 4rem;
+  /* justify-content: center; */
   align-items: center;
   z-index: 10;
   padding-left: 20px;
@@ -24,7 +24,7 @@ body {
 .searchbar input {
   height: 30px;
   width: 60vw;
-  max-width: 500px;
+  max-width: 31.25rem;
   border: none;
   padding-left: 0.5rem;
   border-top-left-radius: 5px 5px;
@@ -38,8 +38,8 @@ body {
 
 .searchbar button {
   cursor: pointer;
-  height: 32px;
-  width: 32px;
+  height: 2rem;
+  width: 2rem;
   background-color: snow;
   border: none;
   border-top-right-radius: 5px 5px;
@@ -79,7 +79,7 @@ body {
 }
 
 .show {
-  top: 64px;
+  top: 4rem;
 }
 
 .fade-layer {
@@ -94,10 +94,14 @@ body {
   display: block;
 }
 
+.headerloginbtn {
+  display: none;
+}
+
 /* -------------------------------------------------------- */
 
 #main {
-  min-height: 100vh;
+  min-height: 50vh;
   margin: 0;
   background-color: black;
   display: grid;
@@ -107,11 +111,6 @@ body {
 .slideshow-container {
   position: relative;
   width: 100%;
-}
-
-.mySlides img {
-  width: 100%;
-  height: 50vh;
 }
 
 .mySlides > a::after {
@@ -132,7 +131,7 @@ body {
   position: absolute;
   width: auto;
   top: 50%;
-  padding: 16px;
+  padding: 1rem;
   margin-top: -22px;
   font-weight: bold;
   font-size: 18px;
@@ -235,8 +234,8 @@ aside {
 
 /* -------------------------------------------------------- */
 
-footer {
-  min-height: 70vh;
+#footer {
+  min-height: 60vh;
   background-color: black;
 }
 
@@ -302,7 +301,7 @@ footer {
   display: flex;
   height: 50px;
   width: 50px;
-  font-size: 32.5px;
+  font-size: 25px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -352,29 +351,64 @@ footer {
   } */
 
   #header {
-    justify-content: space-between;
-    padding-inline: 5rem;
+    gap: 2rem;
+    padding-inline: 7.5rem;
+  }
+
+  .headerloginbtn {
+    color: snow;
+    display: block;
+    height: 2rem;
+    display: flex;
+    align-items: center;
   }
 
   #main {
     min-height: 60vh;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    padding-inline: 5rem;
+    padding-inline: 7.5rem;
   }
 
   #section {
-    padding-left: 5rem;
+    padding-left: 7.5rem;
+  }
+
+  #footer {
+    min-height: 50vh;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: 60vh;
   }
 
   .slideshow-container {
     grid-column: 1 / 3;
   }
 
-  aside {
-    display: initial;
+  .aside {
     background-color: rgb(15, 15, 15);
-    height: 50vh;
+    color: red;
+  }
+
+  #aside {
+    display: initial;
+  }
+
+  .asidetitle {
+    display: flex;
+    align-items: center;
+    color: snow;
+    background-color: black;
+    padding-bottom: 3vh;
+    font-size: 1.5rem;
+  }
+
+  .asideimage {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
 
   .navlogo {
@@ -398,7 +432,7 @@ footer {
   }
 
   .searchbar input {
-    width: 50vw;
+    width: 40vw;
     max-width: unset;
   }
 
@@ -408,5 +442,17 @@ footer {
 
   .scrollbarcontainer img {
     width: 30vw;
+  }
+
+  .footericon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footerlinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
 }
