@@ -431,8 +431,7 @@ aside {
   }
 
   .searchbar input {
-    margin-left: 15rem;
-    width: 30vw;
+    width: 45vw;
     max-width: unset;
   }
 
