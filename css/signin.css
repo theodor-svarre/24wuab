@@ -8,8 +8,7 @@ body {
   height: 4rem;
   align-items: center;
   z-index: 10;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-inline: 1rem;
 }
 
 .navlogo {
@@ -101,6 +100,7 @@ body {
 
 .headerbtn {
   display: none;
+  text-decoration: none;
 }
 
 /* -------------------------------------------------------- */
@@ -114,8 +114,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 50%;
   gap: 1rem;
+  width: 100%;
 }
 
 .mainlogin {
@@ -154,7 +154,6 @@ body {
 
 .mainright {
   display: none;
-  width: 50%;
 }
 
 /* -------------------------------------------------------- */
@@ -348,64 +347,21 @@ body {
     min-height: 60vh;
   }
 
-  .mainleft {
-  }
-
   .signborder {
     width: 35%;
   }
 
+  .mainleft {
+    width: 50%;
+  }
+
   .mainright {
     display: flex;
-    justify-content: center;
-  }
-  /* -------------------------------------------------------- */
-
-  #aside {
-    display: initial;
-  }
-
-  .aside {
-    background-color: rgb(15, 15, 15);
-    color: red;
-  }
-
-  .asidetitle {
-    display: flex;
-    align-items: center;
-    color: snow;
-    background-color: black;
-    padding-bottom: 3vh;
-    font-size: 1.5rem;
-  }
-
-  .asideimage {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-  }
-
-  /* -------------------------------------------------------- */
-
-  #section {
-    padding-left: 7.5rem;
-  }
-
-  .sectiontitle {
-    background-color: inherit;
-  }
-
-  .horisantalscrollmenu {
-    background-color: inherit;
-    width: 60%;
-  }
-
-  .slideshow-container {
-    grid-column: 1 / 3;
-  }
-
-  .scrollbarcontainer img {
-    width: 30vw;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    border-left: 0.5px solid black;
+    padding-left: 1rem;
   }
 
   /* -------------------------------------------------------- */
