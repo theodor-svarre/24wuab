@@ -118,20 +118,56 @@ body {
 #main {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 110vh;
+  padding-bottom: 1rem;
 }
 
 .mainleft {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 5rem;
+  gap: 1rem;
 }
 
 .listedmoviecontainer {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 7.5rem;
+  color: red;
+}
+
+.movielinks {
+  height: 100%;
+  width: auto;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.movieimage {
+  height: 100%;
+  width: 85px;
+  object-fit: cover;
+}
+
+.movietext {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: black;
+}
+
+.movietext a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.movietext p {
+  margin: 0;
+  padding-bottom: 1rem;
 }
 
 .mainright {
@@ -327,6 +363,7 @@ body {
   }
 
   .mainright {
+    display: block;
     width: 50%;
   }
 
