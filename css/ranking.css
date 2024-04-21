@@ -177,12 +177,16 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.movietext a:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .movietext p {
   margin: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .mainright {
@@ -190,6 +194,27 @@ body {
   padding-left: 2rem;
   width: 35%;
 }
+
+.mainright h1 {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.mainrighttitle {
+  font-size: calc(1.618 * 1rem);
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.mainrightdescription {
+  font-size: calc(1.618rem);
+  margin: 0;
+}
+
+.mainright div {
+  height: 7.5rem;
+}
+
 /* -------------------------------------------------------- */
 
 #footer {
