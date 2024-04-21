@@ -115,7 +115,14 @@ body {
 
 .slideshow-container {
   position: relative;
+  margin-top: 1rem;
   width: 100%;
+}
+
+.mySlides img {
+  /* width: 570px;
+  height: 450px; */
+  object-fit: cover;
 }
 
 .mySlides > a::after {
@@ -440,7 +447,7 @@ aside {
 
   .aside {
     background-color: rgb(15, 15, 15);
-    color: red;
+    padding-bottom: 0.5rem;
   }
 
   .asidetitle {
@@ -448,22 +455,52 @@ aside {
     align-items: center;
     color: snow;
     background-color: black;
-    padding-bottom: 3vh;
     font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
   }
 
-  .asideimage {
+  .listedmoviecontainer {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    height: 7.5rem;
+    color: red;
+    padding-bottom: 0.5rem;
   }
 
-  .asideimage img {
+  .movielinks {
+    height: 100%;
+    width: auto;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .movieimage {
     height: 100%;
     width: 85px;
     object-fit: cover;
   }
 
-  .asideimagetext {
+  .movietext {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    color: snow;
+  }
+
+  .movietext a {
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: snow;
+  }
+
+  .movietext p {
+    margin: 0;
+    font-weight: normal;
   }
 
   /* -------------------------------------------------------- */
@@ -486,6 +523,7 @@ aside {
   }
 
   .scrollbarcontainer img {
+    object-fit: cover;
     width: 30vw;
   }
 
