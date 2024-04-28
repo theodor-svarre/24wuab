@@ -138,6 +138,7 @@
 }
 
 .aside {
+  display: none;
   background-color: rgb(15, 15, 15);
   padding-bottom: 0.5rem;
 }
@@ -216,6 +217,10 @@
   /* -------------------------------------------------------- */
 
   #aside {
+    display: block;
+  }
+
+  .aside {
     display: block;
   }
 
