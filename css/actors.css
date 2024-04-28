@@ -80,10 +80,12 @@
 /* -------------------------------------------------------- */
 
 #section {
+  min-height: 50vh;
   min-height: 20vh;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-inline: 1rem;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(15, 15, 15);
 }
 
 .actorcontainer {
@@ -111,11 +113,15 @@
 
 /* -------------------------------------------------------- */
 
+#scrollmenu {
+  min-height: 40vh;
+}
+
 .scrollmenutitle {
-  padding-left: 10px;
-  padding-top: 5vh;
-  padding-bottom: 20px;
   margin: 0;
+  padding-inline: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background-color: black;
   color: snow;
 }
@@ -126,60 +132,72 @@
   white-space: nowrap;
   gap: 1rem;
   background-color: black;
+  padding-inline: 1rem;
+  padding-bottom: 4rem;
 }
 
 .horisantalscrollmenu a {
-  display: inline-block;
-  font-size: 50px;
-  text-align: center;
   text-decoration: none;
-  color: black;
-  position: relative;
 }
 
 .horisantalscrollmenu::-webkit-scrollbar {
   display: none;
 }
 
-.scrollbarcontainer img {
-  opacity: 0.7;
-  height: 30vh;
-  width: 65vw;
+.scrollbarcontainer {
+  display: flex;
 }
 
-.scrollimagetextcontainer {
-  padding-bottom: 5vh;
+.scrollbarcontainer img {
+  height: 120px;
+  width: 75px;
+  object-fit: cover;
 }
 
 .scrollbarimagetext {
-  display: flex;
-  justify-content: flex-start;
   color: snow;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding-left: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .scrollbarimagetext:hover {
-  text-decoration: underline;
+  color: rgb(190, 190, 190);
 }
 
 .scrollbarimagetext2 {
   display: flex;
   justify-content: flex-start;
-  color: rgb(100, 100, 255);
-  font-size: 20px;
+  color: snow;
   padding-left: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.scrollbarimagetext2:hover {
-  text-decoration: underline;
 }
 
 /* -------------------------------------------------------- */
 
 @media (min-width: 415px) {
+  #main {
+  }
+
+  .slideshow-container {
+    width: 75%;
+    height: 330px;
+  }
+
+  .mySlides img {
+    height: 330px;
+  }
+
+  /* -------------------------------------------------------- */
+
+  #section {
+  }
+
+  /* -------------------------------------------------------- */
+
+  #scrollmenu {
+    display: none;
+  }
+
+  /* -------------------------------------------------------- */
 }
