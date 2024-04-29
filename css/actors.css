@@ -176,16 +176,32 @@
 /* -------------------------------------------------------- */
 
 @media (min-width: 415px) {
+  .actorname {
+    padding-inline: 7.5rem;
+  }
+
+  .actorjob {
+    padding-inline: 7.5rem;
+  }
+
+  /* -------------------------------------------------------- */
+
   #main {
   }
 
   .slideshow-container {
     width: 75%;
     height: 330px;
+    padding-inline: 7.5rem;
   }
 
   .mySlides img {
     height: 330px;
+    width: 75%;
+  }
+
+  .next {
+    /* width: 30%; */
   }
 
   /* -------------------------------------------------------- */
