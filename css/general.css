@@ -13,6 +13,13 @@ body {
 
 .navlogo {
   display: none;
+  color: snow;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2.5px solid snow;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .searchbar {
@@ -46,29 +53,33 @@ body {
   border-left: 2px solid rgb(190, 190, 190);
 }
 
+.headerbtn {
+  display: none;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------- */
+
 .menu {
-  height: 100vh;
-  width: 100%;
-  background: red;
+  height: 100%;
+  width: 75%;
+  background-color: rgb(15, 15, 15);
   position: fixed;
-  top: -100%;
-  left: 0;
-  transition: top 0.5s;
+  top: 0;
+  left: -90vw;
+  transition: left 0.3s;
   box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
-  z-index: 5;
-}
-
-.menu-button {
-  display: flex;
-  align-items: center;
-}
-
-.menu-button:hover {
-  cursor: pointer;
+  z-index: 10;
 }
 
 .menutitle {
   display: none;
+  color: snow;
+}
+
+.menu-button {
+  cursor: pointer;
+  display: inline;
 }
 
 .menu-button i.material-icons {
@@ -76,31 +87,55 @@ body {
   color: snow;
 }
 
-.menuicontext {
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-}
-
 .show {
-  top: 4rem;
+  left: 0;
 }
 
 .fade-layer {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 2.5;
+  z-index: 5;
 }
 
 .fade-layer.visible {
   display: block;
 }
 
-.headerbtn {
-  display: none;
+.menulogo {
+  color: snow;
   text-decoration: none;
+  border-radius: 10px;
+  border: 2.5px solid snow;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.menu a {
+  text-decoration: none;
+  color: snow;
+}
+
+.unordedlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-right: 2.5rem;
+}
+
+.unordedlist a {
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2.5px solid snow;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* -------------------------------------------------------- */
@@ -222,11 +257,11 @@ body {
   }
 
   .headerbtn {
+    display: flex;
+    align-items: center;
     color: snow;
     display: block;
     height: 2rem;
-    display: flex;
-    align-items: center;
     padding: 0.25rem;
     border-radius: 5px;
     padding-left: 1rem;
@@ -248,12 +283,11 @@ body {
   }
 
   .menu-button {
-    display: block;
+    display: flex;
+    align-items: center;
     color: snow;
     cursor: pointer;
     display: inline;
-    display: flex;
-    align-items: center;
     gap: 5px;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -267,18 +301,36 @@ body {
 
   .navlogo {
     display: flex;
-    color: snow;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 2.5px solid snow;
-    padding: 5px 10px;
-    font-size: 20px;
-    font-family: "Bebas Neue", sans-serif;
   }
 
   .searchbar input {
     width: 45vw;
     max-width: unset;
+  }
+
+  /* -------------------------------------------------------- */
+
+  .menu {
+    height: 50%;
+    width: 100%;
+    top: -100%;
+    transition: top 0.3s;
+  }
+
+  .menu-button {
+    display: flex;
+    align-items: center;
+  }
+
+  .show {
+    top: 0;
+  }
+
+  .unordedlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
   }
 
   /* -------------------------------------------------------- */

@@ -138,7 +138,6 @@
 }
 
 .aside {
-  display: none;
   background-color: rgb(15, 15, 15);
   padding-bottom: 0.5rem;
 }
@@ -157,7 +156,7 @@
   display: flex;
   align-items: center;
   height: 7.5rem;
-  color: red;
+  color: blue;
   padding-bottom: 0.5rem;
 }
 
