@@ -25,6 +25,19 @@
   background-color: black;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.actorimage {
+  display: none;
+  color: white;
+  padding-left: 7.5rem;
+  padding-top: 1rem;
+}
+
+.actorimage img {
+  height: 346px;
+  width: 250px;
 }
 
 .slideshow-container {
@@ -98,6 +111,10 @@
   height: 140px;
   width: 95px;
   object-fit: cover;
+}
+
+.descriptiondesktop {
+  display: none;
 }
 
 .actorcontainer p {
@@ -175,6 +192,13 @@
 
 /* -------------------------------------------------------- */
 
+#cards {
+  display: none;
+  min-height: 50vh;
+}
+
+/* -------------------------------------------------------- */
+
 @media (min-width: 415px) {
   .actorname {
     padding-inline: 7.5rem;
@@ -187,32 +211,65 @@
   /* -------------------------------------------------------- */
 
   #main {
+    display: flex;
+    background-color: rgb(15, 15, 15);
+    padding-right: 7.5rem;
+  }
+
+  .actorimage {
+    display: block;
   }
 
   .slideshow-container {
-    width: 75%;
     height: 330px;
-    padding-inline: 7.5rem;
+    object-fit: cover;
   }
 
   .mySlides img {
     height: 330px;
-    width: 75%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .next {
-    /* width: 30%; */
+    border-radius: 3px 0 0 3px;
   }
 
   /* -------------------------------------------------------- */
 
   #section {
+    padding-left: 7.5rem;
+    padding-right: 25%;
+
+    background-color: rgb(15, 15, 15);
+  }
+
+  .actorcontainer img {
+    display: none;
+  }
+
+  .descriptiondesktop {
+    display: block;
+  }
+
+  .descriptionmobile {
+    display: none;
+  }
+
+  .actorbirthdate {
+    display: none;
   }
 
   /* -------------------------------------------------------- */
 
   #scrollmenu {
     display: none;
+  }
+
+  /* -------------------------------------------------------- */
+
+  #cards {
+    display: flex;
   }
 
   /* -------------------------------------------------------- */
