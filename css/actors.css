@@ -194,7 +194,57 @@
 
 #cards {
   display: none;
-  min-height: 50vh;
+  background-color: snow;
+  padding-inline: 7.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.listedmoviecontainer {
+  display: flex;
+  align-items: center;
+  height: 7.5rem;
+  box-shadow: 0 0 1px black;
+  padding-right: 12.5rem;
+  margin: 1rem;
+}
+
+.movielinks {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.movieimage {
+  height: 100%;
+  width: 85px;
+  object-fit: cover;
+}
+
+.movietext {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: black;
+}
+
+.movietext a {
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  color: black;
+}
+
+.movietext a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.movietext p {
+  margin: 0;
+  padding-bottom: 0.5rem;
 }
 
 /* -------------------------------------------------------- */
@@ -212,7 +262,7 @@
 
   #main {
     display: flex;
-    background-color: rgb(15, 15, 15);
+    background-color: black;
     padding-right: 7.5rem;
   }
 
@@ -240,8 +290,7 @@
   #section {
     padding-left: 7.5rem;
     padding-right: 25%;
-
-    background-color: rgb(15, 15, 15);
+    background-color: black;
   }
 
   .actorcontainer img {
