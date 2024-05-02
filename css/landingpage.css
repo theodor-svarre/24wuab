@@ -70,6 +70,8 @@
   padding-bottom: 20px;
   margin: 0;
   background-color: rgb(15, 15, 15);
+  font-family: "Times New Roman", Times, serif;
+  font-size: calc(15 * 1.618px);
 }
 
 .horisantalscrollmenu {
@@ -107,10 +109,11 @@
   display: flex;
   justify-content: flex-start;
   color: snow;
-  font-size: 20px;
+  font-size: calc(10 * 1.618px);
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: "Helvetica", sans-serif;
 }
 
 .scrollbarimagetext:hover {
@@ -121,10 +124,11 @@
   display: flex;
   justify-content: flex-start;
   color: rgb(100, 100, 255);
-  font-size: 20px;
+  font-size: calc(10 * 1.618px);
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: "Helvetica", sans-serif;
 }
 
 .scrollbarimagetext2:hover {
@@ -147,9 +151,10 @@
   align-items: center;
   color: snow;
   background-color: black;
-  font-size: 1.5rem;
+  font-size: calc(8 * 1.618px);
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .listedmoviecontainer {
@@ -188,11 +193,14 @@
   font-weight: bold;
   padding-bottom: 1rem;
   color: snow;
+  font-size: calc(10 * 1.618px);
 }
 
 .movietext p {
   margin: 0;
   font-weight: normal;
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(9 * 1.618px);
 }
 
 /* -------------------------------------------------------- */

@@ -37,10 +37,6 @@ body {
   background-color: snow;
 }
 
-.searchbar input:hover {
-  color: none;
-}
-
 .searchbar button {
   cursor: pointer;
   height: 2.125rem;
@@ -127,6 +123,7 @@ body {
   gap: 1rem;
   padding-top: 2rem;
   padding-right: 2.5rem;
+  list-style: none;
 }
 
 .unordedlist a {
@@ -151,6 +148,7 @@ body {
   height: 12.5vh;
   justify-content: center;
   align-items: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .signbtn1 {
@@ -169,6 +167,7 @@ body {
   height: 12.5vh;
   justify-content: center;
   align-items: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .signbtn2 {
@@ -180,7 +179,6 @@ body {
   padding: 12.5px;
   border-radius: 5px;
   /* JAg får ändra font senare */
-  /* font-family: "Bebas Neue", sans-serif; */
 }
 
 .signbtn1:hover,
@@ -234,6 +232,8 @@ body {
   text-decoration: none;
   color: snow;
   font-size: 3vh;
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(10 * 1.618px);
 }
 
 .footerlinkswords:hover {
@@ -353,5 +353,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
+  }
+
+  .footerlinkswords {
+    font-size: calc(10 * 1.618px);
   }
 }

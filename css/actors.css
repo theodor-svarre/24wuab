@@ -2,6 +2,8 @@
   padding-left: 1rem;
   color: snow;
   background-color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: calc(15 * 1.618px);
 }
 
 .actorname h1 {
@@ -15,6 +17,8 @@
   gap: 2rem;
   background-color: black;
   padding-left: 1rem;
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(10 * 1.618px);
 }
 
 /* -------------------------------------------------------- */
@@ -115,10 +119,18 @@
 
 .descriptiondesktop {
   display: none;
+  font-family: "Helvetica", sans-serif;
+  padding-bottom: 1rem;
+  width: 75%;
+  font-size: calc(10 * 1.618px);
+}
+
+.descriptionmobile {
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(8 * 1.618px);
 }
 
 .actorcontainer p {
-  font-size: calc(9.5 * 1.618px);
   margin: 0;
 }
 
@@ -126,6 +138,7 @@
   display: flex;
   padding-top: 0.5rem;
   gap: 0.5rem;
+  font-family: "Helvetica", sans-serif;
 }
 
 /* -------------------------------------------------------- */
@@ -236,6 +249,8 @@
   font-weight: bold;
   padding-bottom: 0.5rem;
   color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: calc(10 * 1.618px);
 }
 
 .movietext a:hover {
@@ -245,6 +260,8 @@
 .movietext p {
   margin: 0;
   padding-bottom: 0.5rem;
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(9 * 1.618px);
 }
 
 /* -------------------------------------------------------- */

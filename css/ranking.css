@@ -6,21 +6,24 @@
   padding-right: 0.5rem;
   padding-top: 7.5vh;
   padding-bottom: 7.5vh;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .title h1 {
-  font-size: calc(1.618 * 1.618 * 1rem);
+  font-size: calc(34 * 1.618px);
   margin: 0;
 }
 
 .title h2 {
-  font-size: calc(1.618 * 1rem);
+  font-size: calc(21 * 1.618px);
   margin: 0;
+  font-family: "Helvetica", sans-serif;
 }
 
 .title p {
-  font-size: calc(1.618 * 1rem / 1.5);
+  font-size: calc(13 * 1.618px);
   margin: 0;
+  font-family: "Helvetica", sans-serif;
 }
 /* -------------------------------------------------------- */
 
@@ -69,6 +72,7 @@
   color: black;
   font-weight: bold;
   padding-bottom: 0.5rem;
+  font-size: calc(13 * 1.618px);
 }
 
 .movietext a:hover {
@@ -78,6 +82,8 @@
 .movietext p {
   margin: 0;
   padding-bottom: 0.5rem;
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(9 * 1.618px);
 }
 
 .mainright {
@@ -89,15 +95,18 @@
 .mainright h1 {
   margin: 0;
   padding-bottom: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: calc(21 * 1.618px);
 }
 
 .mainrighttitle {
-  font-size: calc(1.618 * 1rem);
+  font-size: calc(15 * 1.618px);
   margin: 0;
   padding-bottom: 1rem;
   font-weight: bold;
   text-decoration: none;
   color: black;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .mainrighttitle:hover {
@@ -105,12 +114,13 @@
 }
 
 .mainrightdescription {
-  font-size: 1.25rem;
+  font-size: calc(10 * 1.618px);
   margin: 0;
+  font-family: "Helvetica", sans-serif;
 }
 
 .mainright div {
-  height: 6rem;
+  height: 5.5rem;
 }
 
 /* -------------------------------------------------------- */
